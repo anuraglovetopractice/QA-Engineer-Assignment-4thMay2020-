@@ -1,0 +1,17 @@
+Positive Cases:
+1. Validate user input is required to complete the execution of the program.
+2. Validate program accepts  only numeric value (natural number) to continue execution of the program.
+3. Validate Validation message ‘Please enter a natural number between range (1 to 2147483647)’ Is displayed, if user provides invalid input
+4. Validate message ‘How many prime numbers you want to see:’ is displayed to user when it ask for user input after executing the program.
+5. Validate if user provides 10 as user input, then only list of first 10 prime numbers should be displayed.
+6. Validate if user provides invalid input then execution of program doesn’t get exit and it ask continuously to user until he/she provides the valid input.
+7. Validate if user provides the valid input then program successfully executed without any error.
+8. Validate if user provides valid input, it displayed the prime number along with message ‘First <n> prime numbers are:-’
+9. Validate index / count number is also displayed in output along with prime number (for eg <count/index> prime number is: <primeNumber>)
+
+Negative Cases:
+10. Validate program doesn’t accept zero or negative numbers as user input
+11. Validate program doesn’t accept decimal values (3.0) as user input
+12. Validate program doesn’t accept any string value (abc) as user input.
+13. Validate program doesn’t accept any special character (! ,*) as user input.
+14. Validate user is not able to see the list of prime numbers more than 2147483647, if user provides a value more than 2147483647 then a message ‘Please enter a natural number between range (1 to 2147483647)’ is displayed
