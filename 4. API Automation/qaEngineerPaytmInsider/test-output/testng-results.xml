@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="2999" started-at="2020-05-03T20:37:36Z" finished-at="2020-05-03T20:37:39Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="2999" started-at="2020-05-03T20:37:36Z" finished-at="2020-05-03T20:37:39Z">
+      <class name="qaEnginnerPaytmInsider.qaEngineerPaytmInsider.script">
+        <test-method status="PASS" signature="setup()[pri:0, instance:qaEnginnerPaytmInsider.qaEngineerPaytmInsider.script@667a738]" name="setup" is-config="true" duration-ms="462" started-at="2020-05-04T02:07:36Z" finished-at="2020-05-04T02:07:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="isMovieContentAvailable()[pri:0, instance:qaEnginnerPaytmInsider.qaEngineerPaytmInsider.script@667a738]" name="isMovieContentAvailable" duration-ms="2126" started-at="2020-05-04T02:07:36Z" finished-at="2020-05-04T02:07:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isMovieContentAvailable -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:qaEnginnerPaytmInsider.qaEngineerPaytmInsider.script@667a738]" name="setup" is-config="true" duration-ms="0" started-at="2020-05-04T02:07:38Z" finished-at="2020-05-04T02:07:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validatingMovieData()[pri:0, instance:qaEnginnerPaytmInsider.qaEngineerPaytmInsider.script@667a738]" name="validatingMovieData" duration-ms="392" started-at="2020-05-04T02:07:38Z" finished-at="2020-05-04T02:07:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatingMovieData -->
+      </class> <!-- qaEnginnerPaytmInsider.qaEngineerPaytmInsider.script -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
