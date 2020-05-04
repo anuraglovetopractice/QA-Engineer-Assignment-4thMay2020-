@@ -97,3 +97,19 @@ TC 7: Validate user can not re apply the code after completing the first transac
  - Expected:
 	- Validate user will see the message that "this promo code has already been used, please try with another promo code"
 	- User is able to complete the second transaction without gettng any discount.
+	
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+TC 8: Validate user can not apply the code after completing the first transaction successfully.
+ - Preconditions: 
+	- Create a new user.
+ - Steps:
+	- Login to application
+	- Add items in cart of rs 1000 or more
+	- Navigate to payment page
+	- Do not apply any promo code (NEW30) and complete the transaction without promo code
+	- now again add some items in cars of 1000 rs or more
+	- Navigate to payment page
+	- Apply promo code (NEW30) when asked and complete the transaction.
+ - Expected:
+	- Validate user will see the message that "this promo code only for new user and can be applied to their first transaction"
+	- User is able to complete the transaction without gettng any discount.
