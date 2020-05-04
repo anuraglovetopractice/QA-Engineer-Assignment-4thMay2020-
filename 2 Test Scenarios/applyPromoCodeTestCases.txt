@@ -11,7 +11,7 @@ TC 1: Validate only new user will get discount of 300 rs on a minimum transactio
 	- Validate new user got the discount of 300 rs on a minimum transaction of Rs 1000.
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-TC 2: Validate that promo code is unique and can be applied only once to only a user.
+TC 2: Validate that promo code is unique and can not be applied by another user if alrady applied.
  - Preconditions: 
 	- Create a new user (User A).
 	- Create a new user (User B).
@@ -23,7 +23,7 @@ TC 2: Validate that promo code is unique and can be applied only once to only a 
 	- Login to application with user B
 	- Add items in cart of rs 1000 or more
 	- Navigate to payment page
-	- Apply promo code (NEW30) when asked 
+	- Apply promo code (NEW30) when asked
  - Expected:
 	- Validate user (user A) will see the message that "promo code has been applied successfully and got the discount of 30% on minimum transaction.
 	- Validate user (user B) will see the message that 'promo code has already been used by another user, please try with another promo code'
@@ -113,3 +113,25 @@ TC 8: Validate user can not apply the code after completing the first transactio
  - Expected:
 	- Validate user will see the message that "this promo code only for new user and can be applied to their first transaction"
 	- User is able to complete the transaction without gettng any discount.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+TC 9: Validate that promo code is unique and can be applied only once to only a user.
+ - Preconditions: 
+	- Create a new user (User A).
+	- Create a new user (User B).
+ - Steps:
+	- Login to application with user A in chrome browser.
+	- Add items in cart of rs 1000 or more.
+	- Navigate to payment page.
+	- Enter the promo code
+	- Login to application with user B in firefox browser.
+	- Add items in cart of rs 1000 or more.
+	- Navigate to payment page.
+	- Enter the promo code.
+	- Click on apply button for both users simultaneously.
+	- Validate one user will get that 'promo code has been applied and you will get 30% discount'
+	- Validate that another user will not be able to apply the promo code.
+	- Complete the transation for both users.
+ - Expected:
+	- Validate one user will get the discount on minimum transaction rs 1000 rs
+	- Validate another user will not get the discount or minimum transaction of 1000 rs.
